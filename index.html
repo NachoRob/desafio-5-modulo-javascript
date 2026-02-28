@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio's To Do List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <img class="main-logo" src="assets/img/logo.png" alt="Logo To Do List">
+        
+        <div class="botones-main">
+            <div class="botones">
+                <input id="nombre-tarea-agregar" placeholder="Nueva tarea...">
+                <button id="button-agregar">Agregar</button>
+            </div>
+        </div>
+
+        <div class="contenido-lista">
+            <div class="stats">
+                <p>Total: <strong id="total-tareas">0</strong></p>
+                <p>Realizadas: <strong id="realizadas-tareas">0</strong></p>
+            </div>
+            
+            <div class="tabla-container">
+                <table id="tabla-tareas">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tarea</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

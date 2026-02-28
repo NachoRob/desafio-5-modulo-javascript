@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #d8d8d8;
+}
+
+.main-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255); /* Añade fondo para ver el contenedor */
+    border-radius: 8px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Configuración de Botones */
+
+button {
+    padding: 8px 8px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0;
+    gap: 10px; 
+    width: 100%;
+    max-width: none;
+}
+
+th:nth-child(1), td:nth-child(1) { width: 50px; } /* Ancho pequeño para ID */
+th:nth-child(2), td:nth-child(2) { width: auto; } /* Tarea usa el espacio restante */
+th:nth-child(3), td:nth-child(3) { width: 100px; text-align: right; }
+
+td:nth-child(3), 
+.acciones-cell { /* Esta es la clase que aplicamos al <td> en el HTML */
+    display: flex; /* Forzamos a los iconos a comportarse como flex items */
+    align-items: center; /* Centrado vertical perfecto */
+    justify-content: flex-end; /* Los pega a la derecha, uno al lado del otro */
+    gap: 15px; /* Espacio horizontal uniforme entre el checkbox y la X */
+    border-bottom: none !important; /* Evitamos que bordes de tabla rompan el alineamiento flex */
+}
+
+.btn-eliminar {
+    background: none; /* Sin fondo */
+    border: none; /* Sin bordes */
+    color: red; /* Color rojo de tu ejemplo */
+    font-size: 1.5rem; /* Tamaño adecuado de la X */
+    padding: 0; /* Sin padding para alineamiento preciso */
+    margin: 0; /* Sin márgenes para alineamiento preciso */
+    line-height: 1; /* Altura de línea para centrado preciso */
+}
+
+#nombre-tarea-agregar{
+    flex: 8; /* El input es mucho más largo */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+} 
+#button-agregar {
+    flex: 1;         /* Reparte el ancho en 3 partes iguales */
+    padding: 12px;   /* Margen interno uniforme */
+    height: 45px;    /* Altura igual para todos */
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Logo principal */
+.main-logo{
+    max-width: 100%;  
+    height: auto;     
+    display: block;
+    max-height: 200px;
+    align-self: center;
+}
+
+
+/* Contenedor con tareas */
+.contenido-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; /* Obligatorio para que se estire */
+    gap: 40px; 
+    margin-top: 20px;
+    flex-grow: 1; /* Esto empuja el contenido para ocupar el espacio sobrante */
+}
+
+#lista-tareas {
+    flex: 2;
+    list-style: none;
+}
+
+.stats {
+    flex: 0 0 150px; /* No se encoge, no crece, mide 150px fijos */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+.stats p {
+    color: #555;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span{
+    margin-right: 10px;
+}
+
+/* Tabla */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio doble entre bordes */
+    margin-top: 10px;
+}
+
+thead th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #ccc; /* Línea gruesa para el encabezado */
+    color: #333;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Línea fina entre tareas */
+    vertical-align: middle;
+}
+
+/* Anchos fijos para que no bailen las columnas */
+th:nth-child(1), td:nth-child(1) { width: 50px; } /* Columna ID */
+th:nth-child(2), td:nth-child(2) { width: auto; } /* Columna Tarea */
+th:nth-child(3), td:nth-child(3) { width: 100px; text-align: center; } /* Checkbox y X */
+
+/* Tachado de las tareas*/
+.tachado {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
+
+.tabla-container {
+    flex-grow: 1; /* La tabla toma todo el espacio restante a la derecha */
+}
+
+table {
+    width: 100%; /* Asegura que la tabla llene su contenedor */
+    border-collapse: collapse;
+}
