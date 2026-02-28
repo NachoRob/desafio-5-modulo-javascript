@@ -1,4 +1,4 @@
-# 🚀 Todo List Dashboard - ACE Project
+# 🚀 Todo List Dashboard 
 
 Un panel de control de tareas dinámico desarrollado con **HTML5**, **CSS3** (Flexbox/Grid) y **JavaScript (DOM Manipulation)**. Este proyecto fue diseñado siguiendo una estética de dashboard profesional, optimizando la visualización de datos en formato tabular.
 
