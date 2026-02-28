@@ -2,6 +2,8 @@
 
 Un panel de control de tareas dinámico desarrollado con **HTML5**, **CSS3** (Flexbox/Grid) y **JavaScript (DOM Manipulation)**. Este proyecto fue diseñado siguiendo una estética de dashboard profesional, optimizando la visualización de datos en formato tabular.
 
+### 🔗 [Ver Proyecto en Vivo (GitHub Pages)](https://nachorob.github.io/desafio-5-modulo-javascript/)
+
 ## 📋 Características
 
 * **Gestión Dinámica**: Agregar, tachar y eliminar tareas en tiempo real mediante manipulación del DOM.
